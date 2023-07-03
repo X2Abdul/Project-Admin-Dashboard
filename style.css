@@ -1,0 +1,46 @@
+body{
+    display:flex;
+    flex-direction: column;
+}
+*{
+    font-family: Arial;
+}
+
+.logo{
+    display:flex;
+    align-items: center;
+    gap: 10px;
+    height: 7vh;
+    margin-left: 1vw;
+}
+
+.logo-title{
+    font-size: 2rem;
+    color: white;
+    font-weight: bolder;
+}
+
+.navigation{
+    width: 20vw;
+    background-color: rgb(0, 153, 255);
+    height:100vh;
+}
+
+.nav-option{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.nav-option-title{
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: white;
+}
+
+.top-nav-options, .bottom-nav-options{
+    display: grid;
+    grid-template-columns: 1fr;
+    margin-bottom: 5vh;
+    margin-left: 2vw;
+}
