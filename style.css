@@ -1,9 +1,12 @@
 body{
     display:flex;
-    flex-direction: column;
+    flex-direction: row;
+    margin-left: 15vw;
+    margin-right: 15vw;
+    background-color: black;
 }
 *{
-    font-family: Arial;
+    font-family: Arial !important;
 }
 
 .logo{
@@ -21,7 +24,7 @@ body{
 }
 
 .navigation{
-    width: 20vw;
+    width: 15vw;
     background-color: rgb(0, 153, 255);
     height:100vh;
 }
@@ -30,6 +33,13 @@ body{
     display: flex;
     align-items: center;
     gap: 20px;
+    transition-duration: 0.4s;
+    background-color: rgb(0, 153, 255);
+}
+
+.nav-option:hover{
+    background-color: black;
+    cursor: pointer;
 }
 
 .nav-option-title{
@@ -42,5 +52,101 @@ body{
     display: grid;
     grid-template-columns: 1fr;
     margin-bottom: 5vh;
+    /* padding-left: 1.5vw; */
+}
+
+.extra-space{
+    width: 1.5vw;
+}
+
+.header{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    height: 20vh;
+    width: 55vw;
+    box-shadow: 100px #000;
+}
+.top-header{
+    margin: 0.5vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.right-top-header{
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    gap: 1vw;
+    margin-right: 2vw;
+}
+
+.header-profile-name{
+    font-size: larger;
+    font-weight: bolder
+}
+
+.left-top-header{
+    display: flex;
+    align-items: center;
+    gap: 0.5vw;
     margin-left: 2vw;
+}
+.search-bar{
+    width: 30vw;
+    height: 3vh;
+    border-radius: 20px;
+    background-color: #e5e7eb;
+    border: 0px solid;
+}
+
+.bottom-header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 2.5vw;
+    margin-right: 2.5vw;
+}
+.profile-grettings{
+    margin-left: 1vw;
+}
+
+.welcome{
+    display: flex;
+    align-items: center;
+}
+.greeting{
+    font-size: small;
+    font-weight: bold;
+}
+.profile-name{
+    font-size: large;
+    font-weight: bolder;
+    line-height: 0.2vh;
+}
+.buttons{
+    display: flex;
+    align-items: center;
+    gap: 3vw;
+}
+
+.button{    
+    border-radius: 30px;
+    border: 0px solid;
+    background-color: rgb(66, 177, 252);
+    font-size: medium;
+    font-weight: bold;
+    color: white;
+    padding: 1rem;
+    width: 5vw;
+    height: 5vh;
+    cursor: pointer;
+}
+
+.content-main{
+    width: 55vw;
+    height: 80vh;
+    background-color: #e5e7eb;
+
 }
