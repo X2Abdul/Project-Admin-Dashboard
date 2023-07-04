@@ -150,3 +150,50 @@ body{
     background-color: #e5e7eb;
 
 }
+
+.content-main{
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    gap: 1vw;
+}
+.project-list{
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: 1fr 1fr;
+}
+
+.projects{
+    margin-top: 3vh;
+    margin-left: 2vh;
+    
+}
+
+.project-title{
+    font-size: larger;
+    font-weight: bold;
+    margin-bottom: 2vh;
+}
+
+.project{
+    background-color: white;
+    border-left: 5px solid gold;
+    padding: 2rem;
+    width: 15vw;
+    height: 15vh;
+    border-radius: 1rem;
+}
+
+.project .title{
+    font-size: large;
+    font-weight: bold;
+    margin-bottom: 1vh;
+
+}
+
+.project .project-icons{
+    display: flex;
+    justify-content: flex-end;
+    gap: 1vw;
+    margin-top: 1vw;
+    cursor: pointer;
+}
